@@ -30,21 +30,21 @@ From the above, we can determine:
 
 ## Deliverable 2: Summary Statistics on Suspension Coils
 
-create a summary statistics table to show:
+The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Using my knowledge of R, I created 2 summary statistics tables:
 
-The suspension coil’s PSI continuous variable across all manufacturing lots
+1. Suspension coil metrics across all manufacturing lots:
 
-The following PSI metrics for each lot: mean, median, variance, and standard deviation.
+![Del 2 total_summary](https://user-images.githubusercontent.com/97558998/171692197-addc7239-3430-49ac-9f11-bcfc1cd57352.png)
 
-And briefly detail and interpret the suspension coil summary statistics.+
+2. Metrics for each individual lot:
+
+![Del 2 lot_summary](https://user-images.githubusercontent.com/97558998/171692049-0db8b950-973f-4e60-aba7-bb974d583d41.png)
 
 ### Summary Statistics on Suspension Coils
 
-write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The current manufacturing lots overall meet this design specification in that the PSI variance (in total) is 62.29 PSI, well below the design standard of 100 pounds per square inch.
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
-
-Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+However, the variance is substantially different among the 3 lots when analyzed individually. Lot 1 and Lot 2's variance (0.989 and 7.47 respectively) both meet design specs. Lot 3's variance is significantly out of spec range at 170.29 PSI, skewing the total dataset.
 
 ## Deliverable 3: T-Test on Suspension Coils
 
