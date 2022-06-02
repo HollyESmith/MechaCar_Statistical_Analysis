@@ -24,19 +24,19 @@ From the above, we can determine:
 
 1. **Vehicle length** and **ground clearance** provide a non-random amount of variance on miles per gallon (mpg). The other variables, *vehicle weight, spoiler angle,* and *all wheel drive* have p-values that indicate random variance.
 
-2. The p-value of this model [p-value: 5.35e-11] is far less than the 0.05% significance level, indicating: a) there is sufficient evidence to reject the null hypothesis; and b) the slope of the model is not zero.
+2. The p-value of this model [p-value = 5.35e-11] is far less than the 0.05% significance level, indicating: a) there is sufficient evidence to reject the null hypothesis; and b) the slope of the linear regression model is not zero.
 
 3. This linear model has an r-squared value of 0.7149, indicating that 71.5% of the variation in the output variable is explained by the input variables. Therefore this model *does* predict the mpg of MechaCar prototypes effectively.
 
-## Deliverable 2: Summary Statistics on Suspension Coils
+## Deliverable 2: Create Visualiztions for the Trip Analysis
 
 The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Using my knowledge of R, I created 2 summary statistics tables:
 
-1. Suspension coil metrics across all manufacturing lots:
+1. Suspension coil PSI metrics across all manufacturing lots:
 
 ![Del 2 total_summary](https://user-images.githubusercontent.com/97558998/171692197-addc7239-3430-49ac-9f11-bcfc1cd57352.png)
 
-2. Metrics for each individual lot:
+2. Suspension coil PSI metrics for each individual lot:
 
 ![Del 2 lot_summary](https://user-images.githubusercontent.com/97558998/171692049-0db8b950-973f-4e60-aba7-bb974d583d41.png)
 
@@ -48,13 +48,31 @@ However, the variance is substantially different among the 3 lots when analyzed 
 
 ## Deliverable 3: T-Test on Suspension Coils
 
-In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+Using the t.test() function I determined whether the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch:
 
-Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+![Del 3 Step 1](https://user-images.githubusercontent.com/97558998/171697224-a2cffa44-b289-45d3-ac3b-5e69fd2840fa.png)
+
+Next, I wrote three more RScripts using the t.test() function and its subset() argument to determine whether the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch:
+
+Manufacturing Lot 1:
+
+![Del 3 Step 2 Lot 1](https://user-images.githubusercontent.com/97558998/171697244-1bc663e6-8146-4cc9-9347-944e53f94312.png)
+
+Manufacturing Lot 2:
+
+![Del 3 Step 2 Lot 2](https://user-images.githubusercontent.com/97558998/171697259-6e2cd572-7d55-498f-9433-33d16394929b.png)
+
+Manufacturing Lot 3:
+
+![Del 3 Step 2 Lot 3](https://user-images.githubusercontent.com/97558998/171697272-e2615cbe-a440-487b-8fbf-4305451c55e1.png)
 
 ### T-Tests on Suspension Coils
 
-Briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+In the first t-test across all manufacturing lots, the p-value was 0.06028, higher than the significance level of 0.05, indicating that there is not enough evidence to reject the null hypothesis.
+
+Results of the t-test for Lot 1 indicates that the p-value is not low enough (p-value = 1) to reject the null hypothesis.
+Results of the t-test for Lot 2 indicates that the p-value is not low enough (p-value = 0.6072) to reject the null hypothesis.
+Results of the t-test for Lot 3 indicates that the p-value is indeed low enough (p-value = 0.0417) to reject the null hypothesis.
 
 ## Deliverable 4: Design a Study Comparing the MechaCar to the Competition
 
