@@ -4,13 +4,29 @@
 
 ## Linear Regression to Predict MPG
 
-short summary using a screenshot of the output from the linear regression, and address the following questions:
+The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance. Multiple metrics, such as vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance, were collected for each vehicle. Using my knowledge of R, I designed a linear model to predict the mpg of MechaCar prototypes using several variables from the MechaCar_mpg.csv file. 
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+---
 
-Is the slope of the linear model considered to be zero? Why or why not?
+Linear regression model results:
 
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+![Del 1 Step 5](https://user-images.githubusercontent.com/97558998/171662208-1225ab9f-ff11-490d-81fc-fd4c2441ac8c.png)
+
+---
+
+P-value and r-squared values:
+
+![Del 1 Step 6](https://user-images.githubusercontent.com/97558998/171662360-9019856a-e5fa-4600-8914-d5cf515c4fe6.png)
+
+---
+
+From the above, we can determine:
+
+1. Vehicle length and ground clearance provide a non-random amount of variance on miles per gallon (mpg). The other variables, *vehicle weight, spoiler angle,* and *All Wheel Drive* have p-values that indicate random variance.
+
+2. The p-value of this model [p-value: 5.35e-11] is far less than the 0.05% significance level, indicating that a) there is sufficient evidence to reject the null hypothesis and b) the slope of the model is not zero.
+
+3. This linear model has an r-squared value of 0.7149, indicating that 71.5% of the variation in the output variable is explained by the input variables. Therefore this model *does* predict the mpg of MechaCar prototypes effectively.
 
 ## Deliverable 2: Summary Statistics on Suspension Coils
 
