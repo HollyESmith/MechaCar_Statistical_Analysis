@@ -22,9 +22,9 @@ P-value and r-squared values:
 
 From the above, we can determine:
 
-1. Vehicle length and ground clearance provide a non-random amount of variance on miles per gallon (mpg). The other variables, *vehicle weight, spoiler angle,* and *All Wheel Drive* have p-values that indicate random variance.
+1. **Vehicle length** and **ground clearance** provide a non-random amount of variance on miles per gallon (mpg). The other variables, *vehicle weight, spoiler angle,* and *all wheel drive* have p-values that indicate random variance.
 
-2. The p-value of this model [p-value: 5.35e-11] is far less than the 0.05% significance level, indicating that a) there is sufficient evidence to reject the null hypothesis and b) the slope of the model is not zero.
+2. The p-value of this model [p-value: 5.35e-11] is far less than the 0.05% significance level, indicating: a) there is sufficient evidence to reject the null hypothesis; and b) the slope of the model is not zero.
 
 3. This linear model has an r-squared value of 0.7149, indicating that 71.5% of the variation in the output variable is explained by the input variables. Therefore this model *does* predict the mpg of MechaCar prototypes effectively.
 
