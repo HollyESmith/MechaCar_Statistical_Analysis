@@ -28,7 +28,7 @@ From the above, we can determine:
 
 3. This linear model has an r-squared value of 0.7149, indicating that 71.5% of the variation in the output variable is explained by the input variables. Therefore this model *does* predict the mpg of MechaCar prototypes effectively.
 
-## Deliverable 2: Create Visualiztions for the Trip Analysis
+## Deliverable 2: Create Visualizations for the Trip Analysis
 
 The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Using my knowledge of R, I created 2 summary statistics tables:
 
@@ -76,18 +76,15 @@ Results of the t-test for Lot 3 indicates that the p-value is indeed low enough 
 
 ## Deliverable 4: Design a Study Comparing the MechaCar to the Competition
 
-design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
+Goal: design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
 
 ### Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+In addition to data already analyzed, two key factors that influence a customer's choice of vehicle are reliability and safety ratings. 
 
-In your description, address the following questions:
+Null Hypothesis (H<sub>0</sub>): MechaCar reliability and safety ratings are higher than the competition.<br>
+Alternate Hypothesis (H<sub>a</sub>): MechaCar reliability and safety ratings are NOT higher than the competition.<br/>
 
-What metric or metrics are you going to test?
+The paired t-test will give us a p-value that will enable us to accept or reject the null hypotheses. T-tests will also demonstrate differences in means that will enable comparison of ratings of MechaCar with its competitors.
 
-What is the null hypothesis or alternative hypothesis?
-
-What statistical test would you use to test the hypothesis? And why?
-
-What data is needed to run the statistical test?
+Data to be collected should be numerical and continuous, and normally distributed in a reasonably large sample size.
